@@ -1,0 +1,66 @@
+/* ---=== SKILLS ===--- */
+
+/* === GRID === */
+.grid{
+    grid-template-columns: repeat(3, minmax(min(50%, 200px), 1fr));
+    padding-bottom: 40px;
+}
+.grid h2{
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+/* ======================================================== */
+
+
+/* === PROGRAMS === */
+.program{
+    display: flex;
+    align-items: center;
+}
+.program img{
+    width: 100px;
+}
+/* percentage */
+.percentage{
+    width: 70%;
+    margin-left: 20px;
+}
+.percentage p{
+    color: var(--l-green);
+}
+.percentage h3{
+    color: var(--orange);
+}
+
+/* ======================================================== */
+
+
+/* === PERCENTAGES === */
+#p90{
+    background: var(--d-green);
+    padding: 6px;
+    width: 90%;
+}
+#p80{
+    background: var(--d-green);
+    padding: 6px;
+    width: 80%;
+}   
+#p70{
+    background: var(--d-green);
+    padding: 6px;
+    width: 70%;
+}   
+#p60{
+    background: var(--d-green);
+    padding: 6px;
+    width: 60%;
+}   
+#p50{
+    background: var(--d-green);
+    padding: 6px;
+    width: 50%;
+} 
+#p10{
+    color: var(--d-green);
+}
