@@ -94,3 +94,14 @@
 .programs img{
     width: 100px;
 }
+
+/* ======================================================== */
+
+
+.bg-hikaru-yoshiki{
+    grid-area: 2 / 1 / 4 / 3;
+}
+
+.drawing{
+    grid-area: 3 / 3 / 5 / 4;
+}
