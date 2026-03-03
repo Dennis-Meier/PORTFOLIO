@@ -98,10 +98,25 @@
 /* ======================================================== */
 
 
-.bg-hikaru-yoshiki{
-    grid-area: 2 / 1 / 4 / 3;
+.personal1{
+    grid-area: 1 / 1 / 2 / 2;
+    padding-bottom: 60px;
 }
-
-.drawing{
-    grid-area: 3 / 3 / 5 / 4;
+.personal2{
+    grid-area: 1 / 2 / 2 / 4; 
+}
+.personal3{
+    grid-area: 2 / 3;
+}
+.personal5{
+    grid-area: 2 / 2 / 2 / 1;
+    padding-bottom: 60px;
+}
+.personal6{ 
+    grid-area: 4 / 1 / 3 / 3 ;  
+} 
+#info{
+    width: 10%;
+    float: left;
+    margin: 10px;
 }
