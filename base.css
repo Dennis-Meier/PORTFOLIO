@@ -25,19 +25,33 @@ body{
     margin-inline: auto;
 }
 
+
 /* ---=== TEXT ===--- */
 h1{
     font-family: var(--headline-bold);
-    font-size: calc(8.6rem + 1vw);
+    font-size: calc(5.6rem + 1vw);
     color: var(--orange);
     text-transform: uppercase;
     margin: 0;
 }
 h2{
     font-family: var(--headline-bold);
-    font-size: calc(4rem + 1vw);
+    font-size: calc(3rem + 1vw);
     color: var(--orange);
     text-transform: uppercase;
+    margin: 0;
+}
+h3{
+    font-family: var(--paragraph);
+    font-size: calc(2rem + 1vw);
+    color: var(--orange);
+    margin: 0;
+}
+h4{
+    font-family: var(--paragraph);
+    font-size: calc(0.6rem + 1vw);
+    font-weight: 700;
+    color: var(--d-green);
     margin: 0;
 }
 p{
@@ -56,9 +70,21 @@ a{
 a:hover{
     text-decoration: underline;
 }
+/* list */
+li{
+    font-size: calc(0.5rem + 1vw);
+    font-weight: 500;
+    color: var(--d-green);
+}
+ul{
+    list-style-type: "# ";
+    margin: 0;
+}
 
 
 /* ---=== SECTIONS ===--- */
+
+/* header */
 header{
     margin: 0 auto;
     padding: 1rem 5rem 1rem 5rem;
@@ -80,11 +106,12 @@ header h1{
     grid-area: 2 / 1 / 3 / 2;
 }
 
+/* nav */
 nav a{
     text-decoration: none;
     color: var(--d-green);
-    font-weight: 700;
-    font-size: calc(1rem + 1vw);
+    font-weight: 600;
+    font-size: calc(0.6rem + 1vw);
 }
 nav a:hover{
     text-decoration: underline;
@@ -98,10 +125,12 @@ nav ul{
     gap: 2.5rem;
 }
 
+/* main */
 main{
-    padding: 2rem 10rem;
+    padding: 2rem 5rem 0 5rem;
 }
 
+/* footer */
 footer{
     display: flex;
     justify-content: space-between;
@@ -109,14 +138,12 @@ footer{
     padding: 1rem 5rem 1rem 5rem;
     border: var(--green) 6px solid;
 }
-
 footer h2{
     color: var(--d-green);
 } 
 footer a , footer p{
     margin: 1rem 0;
 }
-
 .contact{
     grid-area: 1 / 3;
     text-align: right;
@@ -146,4 +173,39 @@ footer a , footer p{
 img{
     max-width: 100%;
     display: block;
+}
+
+/* ---=== BUTTON ===--- */
+
+button{
+    padding: 1rem;
+    margin-top: 2rem;
+    background: transparent;
+    border: 6px dashed var(--orange);
+    color: var(--d-green);
+    font-size: calc(0.6rem + 1vw);
+    font-family: var(--paragraph);
+    font-weight: 700;
+    font-style: normal;
+}
+button:hover{
+    border-color: var(--orange-h);
+    text-decoration: underline;
+    padding: 0.7rem;
+    margin: 2rem 0;
+}
+
+
+/* ---=== IMPORTTANT CLASSES ===--- */
+
+.grid{
+    display: grid;
+}
+
+.flex{
+    display: flex;
+}
+
+.active{
+    text-decoration: underline;
 }

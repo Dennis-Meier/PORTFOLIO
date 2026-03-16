@@ -1,33 +1,5 @@
-/* ==== DESKTOP ==== */
-@media (max-width: 1160px) {
-
-    /* TEXT */
-    h1{
-        font-size: calc(5.6rem + 1vw);
-    }
-    h2{
-        font-size: calc(3rem + 1vw);
-    }
-
-    /* HEADER */
-    header{
-        padding: 1rem 3rem;
-    }
-
-    /* MAIN */
-    main{
-        padding: 2rem 5rem;
-    }
-
-    /* MAIN */
-
-    .intro-img{
-        width: 400px;
-    }
-}
-
 /* ==== TABLET ==== */
-@media (max-width: 810px) {
+@media (max-width: 1024px) {
 
     /* TEXT */
     h1{
@@ -35,6 +7,12 @@
     }
     h2{
         font-size: calc(3rem + 1vw);
+    }
+    h3{
+        font-size: calc(1.2rem + 1vw);
+    }
+    p{
+        margin-left: 1rem;
     }
 
     /* HEADER */
@@ -53,7 +31,7 @@
         justify-content: space-between;
     }
     #logo{
-        max-width: 80px;
+        width: clamp(50px, 80px, 90px);
     }
 
     /* MAIN */
@@ -62,13 +40,14 @@
     }
 
     .intro-img{
-        max-width: 300px;
+        max-width: 400px;
     }
 
     /* FOOTER */
     footer{
         padding: 1rem;
         border-width: 4px;
+        margin-top: 0rem;
     }
 
     #mail-icon, #github-logo{
@@ -79,7 +58,7 @@
 }
 
 /* ==== PHONE ==== */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 
     /* TEXT */
     h1{
@@ -87,6 +66,9 @@
     }
     h2{
         font-size: calc(2rem + 1vw);
+    }
+    h3{
+        font-size: calc(1rem + 1vw);
     }
     p{
         margin-left: 1rem;
@@ -129,6 +111,7 @@
     footer{
         padding: 0.5rem;
         border-width: 4px;
+        margin-top: auto;
     }
 
     #mail-icon, #github-logo{
