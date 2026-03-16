@@ -29,18 +29,34 @@ body{
 h1{
     font-family: var(--headline-bold);
     font-size: calc(8.6rem + 1vw);
-    color: var(--d-green);
+    color: var(--orange);
     text-transform: uppercase;
     margin: 0;
 }
-
 h2{
     font-family: var(--headline-bold);
     font-size: calc(4rem + 1vw);
-    color: var(--d-green);
+    color: var(--orange);
     text-transform: uppercase;
     margin: 0;
 }
+p{
+    font-size: calc(0.5rem + 1vw);
+    font-weight: 500;
+    margin-left: 3rem;
+    color: var(--d-green);
+}
+/* links */
+a{
+    font-size: calc(0.5rem + 1vw);
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--d-green);
+}
+a:hover{
+    text-decoration: underline;
+}
+
 
 /* ---=== SECTIONS ===--- */
 header{
@@ -52,6 +68,7 @@ header{
 header h2, 
 header h1{
     text-align: right;
+    color: var(--d-green);
 }
 .header-logo{
     grid-area: 1 / 1 / 2 / 2;
@@ -81,16 +98,49 @@ nav ul{
     gap: 2.5rem;
 }
 
+main{
+    padding: 2rem 10rem;
+}
+
 footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 1rem 5rem 1rem 5rem;
     border: var(--green) 6px solid;
-    position: absolute;
-    bottom: 0;
+}
+
+footer h2{
+    color: var(--d-green);
+} 
+footer a , footer p{
+    margin: 1rem 0;
+}
+
+.contact{
+    grid-area: 1 / 3;
+    text-align: right;
+}
+.mail{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.github{
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 /* ---=== SVG ===--- */
 #logo{
     fill: var(--orange);
     max-width: 118px;
+}
+#mail-icon, #github-logo{
+    fill: var(--d-green);
+    width: 50px;
+    margin-right: 2rem;
 }
 
 img{

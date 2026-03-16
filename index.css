@@ -1,0 +1,11 @@
+.intro-img{
+    width: 500px;
+    float: right;
+    shape-outside: url(assets/ME/me-1.png);
+    shape-image-threshold: 0.9;
+}
+
+footer{
+    clear: both;
+    margin-top: 6rem;
+}
