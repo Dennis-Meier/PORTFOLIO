@@ -1,6 +1,10 @@
 /* ==== TABLET ==== */
 @media (max-width: 1024px) {
 
+    :root{
+        --border-w: 4px
+    }
+
     /* TEXT */
     h1{
         font-size: calc(5.6rem + 1vw);
@@ -14,11 +18,28 @@
     p{
         margin-left: 1rem;
     }
+    li{
+        font-size: calc(0.7rem + 1vw);
+        margin-left: 0;
+    }
+    ul{
+        padding: 0;
+    }
+
+    /* BUTTON */
+    button{
+        padding: 0.7rem;
+        font-size: calc(0.7rem + 1vw);
+        margin: 0;
+    }
+    button:hover{
+        padding: 0.4rem;
+        margin: 0;
+    }
 
     /* HEADER */
     header{
-        padding: 2rem 1rem;
-        border-width: 4px;
+        padding: 2rem 1rem 1rem;
     }
     /* NAV */
     .header-nav{
@@ -46,7 +67,6 @@
     /* FOOTER */
     footer{
         padding: 1rem;
-        border-width: 4px;
         margin-top: 0rem;
     }
 
@@ -58,7 +78,7 @@
 }
 
 /* ==== PHONE ==== */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
     /* TEXT */
     h1{
@@ -71,13 +91,31 @@
         font-size: calc(1rem + 1vw);
     }
     p{
+        font-size: calc(0.7rem + 1vw);
         margin-left: 1rem;
+    }
+    li{
+        font-size: calc(0.7rem + 1vw);
+        margin-left: 0;
+    }
+    ul{
+        padding: 0;
+    }
+
+    /* BUTTON */
+    button{
+        padding: 0.5rem;
+        font-size: calc(0.7rem + 1vw);
+        margin: 0;
+    }
+    button:hover{
+        padding: 0.2rem;
+        margin: 0;
     }
 
     /* HEADER */
     header{
         padding: 0.5rem 0.5rem 0 0.5rem;
-        border-width: 4px;
     }
     /* NAV */
     .header-nav{
@@ -91,6 +129,7 @@
     }
     nav ul{
         gap: 1rem;
+        margin: 0.5rem 0;
         justify-content: space-between;
     }
     #logo{
@@ -104,13 +143,12 @@
     }
 
     .intro-img{
-        width: 200px;
+        width: 250px;
     }
 
     /* FOOTER */
     footer{
         padding: 0.5rem;
-        border-width: 4px;
         margin-top: auto;
     }
 

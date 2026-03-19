@@ -13,6 +13,8 @@
     --headline: lores-15-narrow, sans-serif;
     --headline-bold: lores-15-bold-alt-oakland, sans-serif;
     --paragraph: realist, sans-serif;
+
+    --border-w: 6px;
 }
 
 body{
@@ -88,7 +90,7 @@ ul{
 header{
     margin: 0 auto;
     padding: 1rem 5rem 1rem 5rem;
-    border: var(--green) 6px solid;
+    border: var(--green) var(--border-w) solid;
     display: grid;
 }
 header h2, 
@@ -133,10 +135,12 @@ main{
 /* footer */
 footer{
     display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
     justify-content: space-between;
     margin: 0 auto;
     padding: 1rem 5rem 1rem 5rem;
-    border: var(--green) 6px solid;
+    border: var(--green) var(--border-w) solid;
 }
 footer h2{
     color: var(--d-green);
@@ -160,6 +164,9 @@ footer a , footer p{
 }
 
 /* ---=== SVG ===--- */
+svg{
+    max-width: 100%;
+}
 #logo{
     fill: var(--orange);
     max-width: 118px;
@@ -181,7 +188,7 @@ button{
     padding: 1rem;
     margin-top: 2rem;
     background: transparent;
-    border: 6px dashed var(--orange);
+    border: var(--border-w) var(--orange) dashed;
     color: var(--d-green);
     font-size: calc(0.6rem + 1vw);
     font-family: var(--paragraph);

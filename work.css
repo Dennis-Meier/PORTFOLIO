@@ -1,0 +1,35 @@
+.grid{
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.school{
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+    margin-bottom: 3rem;
+}
+
+.item{
+    border: var(--border-w) var(--green) solid;
+    background: var(--green);
+}
+.item p{
+    margin: 0;
+}
+
+.personal{
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 3rem;
+}
+
+.column{
+    flex-direction: column;
+    flex-shrink: 1;
+    gap: 2rem;
+}
+
+@media (max-width: 700px) {
+    .personal{
+        grid-template-columns: 1fr;
+    }
+}
+

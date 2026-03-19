@@ -1,0 +1,13 @@
+.skills{
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+.skills .item{
+    display: flex;
+    justify-content: start;
+}
+
+.item img{
+    min-width: 30%;
+}
