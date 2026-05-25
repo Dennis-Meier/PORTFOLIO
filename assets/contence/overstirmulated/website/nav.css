@@ -1,0 +1,31 @@
+/* NAV */
+nav {
+    display: flex;
+    justify-content: center; /* center the segments as a group */
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ede8dc; 
+    z-index: 1;
+    column-gap: 40px; /* initial gap, matches JS minGap */
+}
+a {
+    padding: 30px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+.segment_1{  
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    margin-left: 100px; /* minimum margin, matches JS */
+}
+.segment_2 {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    margin-right: 100px; /* minimum margin, matches JS */
+}

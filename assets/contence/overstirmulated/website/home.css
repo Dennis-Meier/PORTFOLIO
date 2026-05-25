@@ -1,0 +1,27 @@
+/* ==-HOME-== */
+
+/* BACKGROUND */
+.checkerboard {
+    padding-top: 10px;
+    width: 100%;
+    height: 690px;
+    background:
+        repeating-conic-gradient(#ede8dc 0% 25%, #b17f59 0% 50%) 
+        0 0 / 350px 350px;
+}
+
+/* LOGO-SHRINK */
+#main-logo {
+    position: fixed;
+    left: 50%;
+    top: 200px;
+    transform: translateX(-50%) scale(1);
+    width: 40%;
+    transition: transform 0.3s, top 0.3s;
+    z-index: 2;
+    pointer-events: none;
+}
+body.scrolled #main-logo {
+    top: -100px;
+    transform: translateX(-50%) scale(0.375);
+}

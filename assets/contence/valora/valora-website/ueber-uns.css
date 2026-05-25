@@ -1,0 +1,30 @@
+/* ÜBER UNS */
+
+/* HEADER */
+header {
+    height: 300px;
+}
+.header-logo {
+    position: absolute;
+    left: 40%;
+    top: 7%;
+    width: 20%;
+    height: auto;
+}
+header img {
+    height: 300px;
+}
+
+/* TEAM LIST */
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.item {
+    margin: 10px 10px 10px 0px;
+    width: 400px;
+}
+.item img {
+    width: 350px;
+}

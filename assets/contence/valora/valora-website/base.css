@@ -1,0 +1,106 @@
+/*--= BASE =-- */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+    --prim-colour: rgb(52, 52, 153);
+    --sec-colour: rgb(245, 130, 9)
+}
+.wrapper{
+    margin: 0 auto;
+}
+
+/* SECTIONS */
+body {
+    margin: 0;
+}
+main {
+    margin: 60px 20px 20px 20px;
+}
+footer {
+    background-color: gray;
+    height: 40px;
+    clear: both;
+}
+footer p {
+    text-align: right;
+    margin-right: 20px;
+    padding-top: 10px;
+}
+
+/* TEXT */
+h1 {
+    font-weight: bold;
+    color: var(--prim-colour);
+}
+h2 {
+    font-weight: bold;
+    color: var(--sec-colour); 
+}
+
+/* NAV */
+nav {
+    background-color: var(--prim-colour);
+    padding: 20px;
+    overflow: hidden;
+    height: 60px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+nav li {
+    padding: 0 10px;
+}
+nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 40px; 
+}
+nav li a:hover {
+    background-color: var(--sec-colour);
+}
+.active {
+    background-color: var(--sec-colour);
+    font-weight: bold;
+}
+
+/* Extentions for portfolio integration */
+
+@import url("https://use.typekit.net/njx7drz.css");
+
+:root{
+    --green: hsl(81, 26%, 57%);
+    --l-green: hsl(80, 13%, 82%);
+    --d-green: hsl(111, 41%, 13%);
+    --orange: hsl(13, 66%, 44%);
+    
+    --orange-h: hsl(13, 66%, 64%);
+
+    --headline: lores-15-narrow, sans-serif;
+    --headline-bold: lores-15-bold-alt-oakland, sans-serif;
+    --paragraph: realist, sans-serif;
+
+    --border-w: 6px;
+}
+
+button{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 20px;
+    margin: 0;
+    background: white;
+    color: var(--d-green);
+    font-size: calc(0.6rem + 1vw);
+    font-family: var(--paragraph);
+    font-weight: 700;
+    font-style: normal;
+}
+button:hover{
+    text-decoration: underline;
+}
+

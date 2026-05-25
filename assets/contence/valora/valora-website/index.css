@@ -1,0 +1,30 @@
+/*--= INDEX =-- */
+.card {
+    float: left;
+    margin-top: 40px;
+}
+.card img {
+    float: left;
+    margin: 10px 10px 10px 0px;
+    width: 300px;
+    height: auto;
+}
+
+/* HEADER */
+header {
+    height: 300px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    overflow: hidden;
+}
+header img {
+    height: 400px;
+    width: 600px;
+}
+.header-logo {
+    position: absolute;
+    left: 40%;
+    top: 7%;
+    width: 20%;
+    height: auto;
+}

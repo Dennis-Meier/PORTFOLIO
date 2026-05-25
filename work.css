@@ -1,0 +1,113 @@
+/* ---=== WORK ===--- */
+
+
+.grid{
+    margin: 2rem 0;
+}
+
+/* Gridlayout for School projects */
+.school{
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+    margin-bottom: 3rem;
+}
+
+/* Each item inside all grids */
+.item{
+    border: var(--border-w) var(--green) solid;
+    background: var(--green);
+}
+.item p{
+    margin: 0;
+}
+
+/* Gridlayout for Personal projects */
+.personal{
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 3rem;
+}
+/* neccessary for grid layout */
+.column{
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+/* ============================= */
+/* For Subsites */
+
+.text{
+    margin-top: 2rem;
+}
+
+.text-body{
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.video-body{
+    grid-template-columns: repeat(2, 1fr);
+}
+.video{
+    grid-area: 1 / 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+
+.S-designed-material{
+    grid-template-columns: 1.3fr repeat(2, 1fr);
+}
+
+.S-briefbogen{
+    grid-area: 1 / 1 / 3;
+}
+
+@media (max-width: 1024px) {
+    .personal{
+        grid-template-columns: 1fr 1fr;
+    }
+    .col-3{
+        align-items: start;
+        grid-area: 2 / 1 / 3 / 3;
+        flex-direction: row;
+    }
+
+    .S-designed-material{
+    grid-template-columns: 1fr 1fr;
+    }
+
+    .S-briefbogen{
+    grid-area: 2 / 1 / 3;
+    }
+
+    .video-body{
+        grid-template-columns: 1fr;
+    }
+    .video{
+        grid-area: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .personal{
+        grid-template-columns: 1fr;
+    }
+    .col-3{
+        align-items: start;
+        grid-area: auto;
+        flex-direction: column;
+    }
+
+    .text-body{
+        gap: 1rem;
+    }
+
+    .text{
+        margin: 0;
+    }
+
+    .text li{
+        margin: 0 0 0 1.5rem;
+    }
+}
+
