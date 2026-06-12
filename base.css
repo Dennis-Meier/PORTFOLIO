@@ -3,237 +3,142 @@
 
 @import url("https://use.typekit.net/njx7drz.css");
 
-:root{
-    --green: hsl(81, 26%, 57%);
-    --l-green: hsl(80, 13%, 82%);
-    --d-green: hsl(111, 41%, 13%);
-    --orange: hsl(13, 66%, 44%);
-    
-    --orange-h: hsl(13, 66%, 64%);
+:root {
+    --orange-0: rgb(186, 70, 39);
+    --orange-100: rgb(198, 121, 103);
 
-    --headline: lores-15-narrow, sans-serif;
-    --headline-bold: lores-15-bold-alt-oakland, sans-serif;
-    --paragraph: realist, sans-serif;
+    --green-0: rgb(24, 46, 20);
+    --green-25: rgb(109, 127, 91);
+    --green-50: rgb(153, 173, 122);
+    --green-75: rgb(214, 226, 197);
+    --green-100: rgb(211, 215, 203);
 
-    --border-w: 6px;
+    --purple-0: rgb(69, 46, 90);
 
-    --gr-gap: 2rem;
+    /* SIZES */
+    --size-s: 1rem;
+    --size-m: 2rem;
+
+    /* BORDER */
+    --border-m: var(--green-50) solid 8px;
+
+    /* FONTS */
+    --heading: 6rem lores-12-bold-alt-oakland, sans-serif;
+    --subheading: 3rem lores-12, sans-serif;
+    --paragraph-big: 1.3rem realist, sans-serif;
+    --paragraph: 1rem realist, sans-serif;
+    --paragraph-light: 1rem realist, sans-serif;
 }
 
-/* ---=== UNIVERSALS ===--- */
-
-img{
-    max-width: 100%;
-    display: block;
+body {
+    background: var(--green-100);
+    height: 5000px;
 }
 
-video{
-    max-width: 100%;
-    border: 6px var(--green) solid;
-    margin-bottom: 30px;
-}
-
-body{
-    background: var(--l-green);
-    font-family: var(--paragraph);
-}
-
-.wrapper{
+.wrapper {
     max-width: 1920px;
-    margin-inline: auto;
-}
-
-
-/* ---=== TEXT ===--- */
-h1{
-    font-family: var(--headline-bold);
-    font-size: calc(5.6rem + 1vw);
-    color: var(--orange);
-    text-transform: uppercase;
-    margin: 0;
-}
-h2{
-    font-family: var(--headline);
-    font-size: calc(3rem + 1vw);
-    color: var(--orange);
-    text-transform: uppercase;
-    margin: 0;
-}
-h3{
-    font-family: var(--paragraph);
-    font-size: calc(2rem + 1vw);
-    color: var(--orange);
-    margin: 0;
-    margin-bottom: 1rem;
-}
-h4{
-    font-family: var(--paragraph);
-    font-size: calc(0.6rem + 1vw);
-    font-weight: 700;
-    color: var(--d-green);
-    margin: 0;
-}
-p{
-    font-size: 1.2rem;
-    font-weight: 500;
-    margin-left: 2rem;
-    color: var(--d-green);
-}
-/* links */
-a{
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-decoration: none;
-    color: var(--d-green);
-}
-a:hover{
-    text-decoration: underline;
-}
-/* list */
-li{
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: var(--d-green);
-}
-ul{
-    list-style-type: "# ";
-    margin: 0;
-}
-
-
-/* ---=== SECTIONS ===--- */
-
-/* header */
-header{
     margin: 0 auto;
-    padding: 1rem 2rem 1rem 2rem;
-    border: var(--green) var(--border-w) solid;
-    display: grid;
-}
-header h2, 
-header h1{
-    text-align: right;
-    color: var(--d-green);
-}
-.header-logo{
-    grid-area: 1 / 1 / 2 / 2;
-}
-.header-name{
-    grid-area: 1 / 2 / 3 / 2 ;
-}
-.header-nav{
-    grid-area: 2 / 1 / 3 / 2;
 }
 
-/* nav */
-nav a{
-    text-decoration: none;
-    color: var(--d-green);
-    font-weight: 600;
-    font-size: calc(0.6rem + 1vw);
-}
-nav a:hover{
-    text-decoration: underline;
-}
-nav li{
-    list-style: none;
-}
-nav ul{
-    padding: 0;
-    display: flex;
-    gap: 2.5rem;
+/* TEXT */
+h1 {
+    font: var(--heading);
+    color: var(--green-0);
 }
 
-/* main */
-main{
-    padding: 2rem 2rem;
+p,
+li {
+    font: var(--paragraph);
+    color: var(--green-0);
 }
 
-/* footer */
-footer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1rem 5rem 1rem 2rem;
-    border: var(--green) var(--border-w) solid;
-    margin-top: 2rem;
-}
-footer h2{
-    color: var(--d-green);
-} 
-footer a , footer p{
-    margin: 1rem 0;
-}
-.contact{
-    grid-area: 1 / 3;
-    text-align: right;
-}
-.mail{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
-.github{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-
-/* ---=== SVG ===--- */
-svg{
-    max-width: 100%;
-}
-#logo{
-    fill: var(--orange);
-    max-width: 118px;
-}
-#mail-icon, #github-logo{
-    fill: var(--d-green);
-    width: 50px;
-    margin-right: 2rem;
-}
-
-
-/* ---=== BUTTON ===--- */
-
-button{
-    padding: 20px;
-    margin: 0;
-    background: transparent;
-    border: var(--border-w) var(--orange) dashed;
-    color: var(--d-green);
-    font-size: calc(0.6rem + 1vw);
-    font-family: var(--paragraph);
+/* links */
+a {
+    font: var(--paragraph-big);
     font-weight: 700;
-    font-style: normal;
+    text-decoration: none;
+    color: var(--green-0);
 }
-button:hover{
-    border-color: var(--orange-h);
+
+a:hover {
+    transition: color 0.2s;
+    color: var(--purple-0);
     text-decoration: underline;
-    padding: 10px;
-    margin: 10px;
 }
 
-
-/* ---=== IMPORTTANT CLASSES ===--- */
-
-.grid{
-    display: grid;
-    gap: var(--gr-gap);
+/* HEADER */
+header {
+    border: var(--border-m);
+    padding: 0 var(--size-s);
+    grid-template-columns: auto 1fr 1fr auto;
 }
 
-.flex{
+header #logo {
+    margin-top: 1.5rem;
+}
+
+.header-name {
+    text-align: end;
+    text-transform: uppercase;
+    grid-area: 1 / 4/ 3;
+}
+
+.header-name h1 {
+    margin: 0;
+}
+
+/* NAV */
+nav {
+    grid-area: 2 / 1 / 2 / 3;
+}
+
+nav ul {
     display: flex;
+    align-items: end;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0;
 }
 
-.active{
-    text-decoration: underline;
+nav a {
+    font: var(--paragraph);
+    font-size: 1.6rem;
+    font-weight: 700;
 }
 
-.program{
-    width: 80px;
+/* nav-small */
+.nav-small {
+    border: var(--border-m);
+    position: fixed;
+    padding: 0 var(--size-s);
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    transition: top 0.5s;
 }
-.programs{
-    gap: 2rem;
-    margin: 1rem 0 1rem;
+
+.nav-small ul {
+    gap: var(--size-m);
+    align-items: center;
+}
+
+.nav-small #logo {
+    width: 40px;
+}
+
+/* SVG */
+#logo {
+    fill: var(--orange-0);
+    width: 100px;
+}
+
+#logo:hover {
+    transition: fill 0.5s;
+    fill: var(--purple-0);
+}
+
+/* ATTRIBUTES */
+.grid {
+    display: grid;
+    gap: var(--size-m);
 }
