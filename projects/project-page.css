@@ -1,0 +1,61 @@
+section {
+    border-bottom: var(--border-small);
+}
+
+/* HERO */
+
+/* info */
+#title {
+    margin: 0;
+}
+
+#description {
+    font: var(--paragraph-big);
+    color: var(--green-25);
+}
+
+/* tags */
+#tags {
+    gap: 0;
+}
+
+#tags p {
+    color: var(--orange-0);
+}
+
+/* MY PROCESS */
+.my-process {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 2rem;
+    align-items: start;
+    padding-bottom: 1.5rem;
+
+    .text {
+        grid-column: 2;
+        min-height: 200px;
+    }
+
+    h3 {
+        margin-top: 2rem;
+    }
+}
+
+.process {
+    position: sticky;
+    top: 80px;
+    align-self: start;
+    grid-column: 1;
+}
+
+/* ==== PHONE ==== */
+@media (max-width: 700px) {
+    .my-process {
+        display: block;
+
+    }
+
+    .process {
+        position: static;
+    }
+}
