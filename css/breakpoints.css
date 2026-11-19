@@ -1,0 +1,8 @@
+@media (min-width: 800px) {
+
+    #hero {
+        img {
+            width: 400px;
+        }
+    }
+}

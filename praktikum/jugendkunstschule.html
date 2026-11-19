@@ -4,17 +4,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>DM - Praktikum: Jugendkunstschule</title>
+
+    <link rel="shortcut icon" href="assets/logo-files/logomark.webp" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/text.css">
-    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="jugendkunstschule.css">
+    <link rel="stylesheet" href="/css/breakpoints.css">
 </head>
 
 <body>
-    <h1>you're here early :D</h1>
-    <p>go away</p>
-</body>
+    <header>
+        <a href="/index.html">
+            <svg class="icon" aria-label="Dennis Meier Logo">
+                <use href="/assets/sprites.svg#logo"></use>
+            </svg>
+        </a>
 
-<script src="/scripts/nav.js"></script>
+        <svg class="icon menu" aria-label="menu icon">
+            <use href="/assets/sprites.svg#menu"></use>
+        </svg>
+    </header>
+
+    <section id="hero">
+        <img src="/assets/jugendkunstschule/JKS-Logo_COLOUR.png" alt="JKS Logo">
+        <h1>Mein Praktikum</h1>
+        <p class="light">JUN - SEP 2026 | Kinder- und Jugendarbeit </p>
+    </section>
+
+    <main>
+        <div class="wrapper">
+            <section id="jugendkunstschule">
+                <h2>Die Jugendkunstschule</h2>
+                <div class="bento-grid bento-layout">
+
+                    <!-- Tile A -->
+                    <article class="bento-item bento-slot--a bento-item--center">
+                        <img src="/assets/jugendkunstschule/icon_gestaltung.png" alt="">
+                        <h3>Gestaltung</h3>
+                    </article>
+
+                    <!-- Tile B -->
+                    <article class="bento-item bento-slot--b">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d432.3031780160459!2d8.715686265562406!3d52.19839650622861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ba1263270acdff%3A0xc91d026b54bc24bd!2sJugendkunstschule%20der%20Stadt%20L%C3%B6hne!5e0!3m2!1sen!2sde!4v1795111090153!5m2!1sen!2sde"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin">
+                        </iframe>
+
+                        <div class="bento-item__overlay">
+                            <p>3. UG Werretalhalle<br>
+                                Alte Bünder Straße 14<br>
+                                32584 Löhne</p>
+                        </div>
+                    </article>
+
+                    <!-- Tile C -->
+                    <article class="bento-item bento-slot--c">
+                        <img class="bento-item__media" src="/assets/jugendkunstschule/tmp-cavetown.JPG" alt="">
+                    </article>
+
+                    <!-- Tile D -->
+                    <article class="bento-item bento-slot--d bento-item--center">
+                        <img src="/assets/jugendkunstschule/icon_medien.png" alt="">
+                        <h3>Medien</h3>
+                    </article>
+
+                    <!-- Tile E -->
+                    <article class="bento-item bento-slot--e">
+                        <img class="bento-item__media" src="/assets/jugendkunstschule/floor-plan-tmp.jpeg" alt="">
+
+                        <div class="bento-item__overlay">
+                            <h3>Räumlichkeiten</h3>
+                        </div>
+                    </article>
+
+                    <!-- Tile F -->
+                    <article class="bento-item bento-slot--f bento-item--center">
+                        <img src="/assets/jugendkunstschule/icon_theater.png" alt="">
+                        <h3>Theater</h3>
+                    </article>
+
+                    <!-- Tile G -->
+                    <article class="bento-item bento-slot--g bento-item--center">
+                        <h3>mehr...</h3>
+                    </article>
+                </div>
+            </section>
+
+            <section id="arbeitsbereich">
+                <h2>Mein Arbeitsalltag</h2>
+            </section>
+
+            <section id="projekte">
+                <h2>Meine Projekte</h2>
+                <div class="grid">
+                    <div class="grid-item">
+                        <img src="/assets/jugendkunstschule/project_figure.jpeg" alt="Project Figure">
+                        <h3>Izuku Mydoryia Figur</h3>
+                        <p class="light">Analog | Mangaday | ...</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="/assets/jugendkunstschule/project_website.JPG" alt="Webseite">
+                        <h3>JKS Wesbesite</h3>
+                        <p class="light">Digital | Webdesign | Figma</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="/assets/jugendkunstschule/project_props.png" alt="Teleskop">
+                        <h3>Theater Requisiten</h3>
+                        <p class="light">Analog | Pappmaché | ...</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="/assets/jugendkunstschule/project_wall.jpg" alt="Wand">
+                        <h3>Wand Bemalung</h3>
+                        <p class="light">Analog | ...</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="takeaway">
+                <h2>Was ich <span class="orange-text">/ du</span> mitnehme<span class="orange-text">(n kannst)</span>
+                </h2>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
 
 </html>

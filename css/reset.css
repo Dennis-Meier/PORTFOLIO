@@ -1,0 +1,56 @@
+/* ==========================================================================
+   1. GLOBAL BOX MODEL (Crucial for DOM pixel math)
+   ========================================================================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /* Width & height include padding and border */
+}
+
+/* ==========================================================================
+   2. NUKING INTERNAL BROWSER MARGINS
+   ========================================================================== */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================================================================
+   3. BASE LAYOUT & TYPOGRAPHY FOUNDATIONS
+   ========================================================================== */
+html {
+    line-height: 1.5;
+    /* Cleans up font leading gaps */
+    -webkit-text-size-adjust: 100%;
+    /* Fixes iOS orientation zoom bugs */
+}
+
+body {
+    /* Ensures container spans the whole screen */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Stops images from leaving a small 3px text-baseline gap at the bottom */
+img,
+picture,
+canvas {
+    display: block;
+    max-width: 100%;
+}
+
+/* Standardizes list formatting so your JS menus don't inherit bullet paddings */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Generated with AI and then tweaked to liking */

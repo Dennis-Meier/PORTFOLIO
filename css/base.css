@@ -1,0 +1,172 @@
+/* ---=== BASE ===--- */
+
+@import url("https://use.typekit.net/njx7drz.css");
+
+:root {
+    /* COLOUR - VALUES */
+    --ink-blue: #09253a;
+    --granny-smith-green: #a0c878;
+    --pear-green: #ddeb9d;
+    --orange: #d36426;
+
+    /* FILLS */
+    --logo-fill: var(--orange);
+    --icon-fill: var(--ink-blue);
+
+    /* BACKGROUNDS */
+    --header-bg: var(--pear-green);
+    --main-bg: var(--granny-smith-green);
+    --card-bg: var(--pear-green);
+
+    /* TEXT */
+    --text: var(--ink-blue);
+    --headings: var(--ink-blue);
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+img {
+    border-radius: 0.5rem;
+}
+
+/* HEADER */
+header {
+    background: var(--header-bg);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 1rem;
+
+    /* flexbox */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    /* dropshadow */
+    filter: drop-shadow(0 0 20px);
+}
+
+/* HERO */
+#hero {
+    /* bg-grid */
+    background: white;
+    opacity: 1;
+    background-image: linear-gradient(#ddeb9d 2px, transparent 2px), linear-gradient(to right, #ddeb9d 2px, #ffffff 2px);
+    background-size: 50px 50px;
+
+    /* flexbox */
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    /* sizing */
+    padding: 2rem;
+    margin: 0 !important;
+
+    h1 {
+        text-align: center;
+        color: var(--orange);
+    }
+
+    img {
+        width: 200px;
+    }
+}
+
+/* SECTIONS */
+section {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+/* MAIN */
+main {
+    background: var(--main-bg);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+/* CONTAINERS */
+/* bento grid */
+.bento-grid {
+    display: grid;
+    gap: 1rem;
+
+    .bento-item {
+        position: relative;
+        overflow: hidden;
+
+        border-radius: 1rem;
+        background: var(--card-bg);
+    }
+
+    /* Images */
+    .bento-item__media {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Centered content */
+    .bento-item--center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    /* Bottom overlay */
+    .bento-item__overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        background: var(--card-bg);
+    }
+
+    /* Embedded content, e.g. maps */
+    .bento-item__embed {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+}
+
+/* grid */
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+
+    .grid-item {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 1rem;
+        flex: 1 150px;
+        background: var(--card-bg);
+        border-radius: 1rem;
+        padding: clamp(0.5rem, 0.5vw, 1rem);
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+/* ICONS */
+.icon {
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,67 @@
+/* BENTO GRID */
+/* preset: 3-column */
+.bento-layout {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(5, minmax(0, 1fr));
+
+    /* grid-template-areas:
+        "gestaltung map map"
+        "img map map"
+        "img medien medien"
+        "raum raum theater"
+        "raum raum mehr";
+         */
+    grid-template-areas:
+        "gestaltung     map         map"
+        "medien         map         map"
+        "img            img         theater"
+        "raum           raum        mehr"
+        "raum           raum        mehr";
+
+    aspect-ratio: 0.47 / 1;
+}
+
+/* Assign positions */
+.bento-slot--a {
+    grid-area: gestaltung;
+}
+
+.bento-slot--b {
+    grid-area: map;
+}
+
+.bento-slot--c {
+    grid-area: img;
+}
+
+.bento-slot--d {
+    grid-area: medien;
+}
+
+.bento-slot--e {
+    grid-area: raum;
+}
+
+.bento-slot--f {
+    grid-area: theater;
+}
+
+.bento-slot--g {
+    grid-area: mehr;
+}
+
+
+@media (min-width: 800px) {
+    .bento-layout {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-template-rows: repeat(4, minmax(0, 1fr));
+
+        grid-template-areas:
+            "gestaltung     map     map     img     img     img"
+            "medien         map     map     img     img     img "
+            "raum           raum    raum    raum    theater theater"
+            "raum           raum    raum    raum    mehr    mehr";
+
+        aspect-ratio: 1.5 / 1;
+    }
+}
