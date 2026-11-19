@@ -1,0 +1,50 @@
+/* NAV desktop */
+.nav-desktop {
+    display: grid;
+    border: var(--border);
+    padding: 0.5rem 1rem;
+    grid-template-columns: auto 5vw 5vw auto;
+
+
+    .logo {
+        width: 100px;
+        margin-top: 1.5rem;
+    }
+
+    h1 {
+        grid-area: 1 / 4/ 3;
+        margin: 0;
+        text-align: end;
+        text-transform: uppercase;
+    }
+
+    nav {
+        grid-area: 2 / 1 / 2 / 3;
+    }
+}
+
+/* NAV mobile */
+.nav-mobile {
+    display: none;
+    padding: 0 1rem;
+    border: var(--border);
+
+    width: calc(100% - 3.5rem);
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+
+    transition: top 0.5s;
+
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    .logo {
+        width: 40px;
+    }
+
+    ul {
+        align-items: center;
+    }
+}
